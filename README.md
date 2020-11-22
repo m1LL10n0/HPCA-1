@@ -49,8 +49,12 @@
 **b)** [stats.txt](simple_se/stats.txt):
 Σειρά | Κώδικας | Περιγραφή
 --- | --- | ---
+10 | `sim_insts 5028` | Number of instructions simulated
+11 | `sim_ops 5834` | Number of ops (including micro ops) simulated
 14 | `system.cpu_cluster.cpus.committedInsts 5028` | Number of instructions committed
 15 | `system.cpu_cluster.cpus.committedOps 5834` | Number of ops (including micro ops) committed  
+
+Ο αριθμός των εντολών που προσομοιώθηκαν και έγιναν \<\<committed\>\> φαίνεται να είναι ίδιος όμως λόγω του γεγονότος ότι μερικές απο τις εντολές έσπασαν σε περισσότερα αλλά μικρότερα micro ops που γίνονται πιο γρήγορα, ο αριθμός των εντολών που ενωματώνει τα micro ops είναι μεγαλύτερος.
 
 **c)** [stats.txt](simple_se/stats.txt):
 Σειρά | Κώδικας | Περιγραφή
