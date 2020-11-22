@@ -1,5 +1,5 @@
 # HPCA
-### Aristotle University of Thessaloniki 
+## Aristotle University of Thessaloniki 
 - *Εργαστήριο Β Ομάδα 3*
 
 [Link to the Repository containing this README](https://github.com/pavlidic/HPCA/)
@@ -11,7 +11,7 @@
 
 ---
 
-#### 1ο Ερώτημα:
+### 1ο Ερώτημα:
 **starter_se.py**  
 
 Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
@@ -32,7 +32,7 @@
 87-96 | `class L2(L2Cache):    tag_latency = 12    data_latency = 12    response_latency = 5    mshrs = 32    tgts_per_mshr = 8    size = '1MB'    assoc = 16    write_buffers = 8    clusivity='mostly_excl'` | L2 cache
 
 ---
-#### 2ο Ερώτημα:
+### 2ο Ερώτημα:
 **a)** Τα στοιχεία αυτά μπορούν αν επαληθευτούν κοιτάζοντας στο αρχείο **config.ini**:
 Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
 --- | --- | ---
@@ -63,4 +63,4 @@
 **`479=dcache_mshr_misses+icache_mshr_misses`**    
 
 ---
-#### 3ο Ερώτημα:
+### 3ο Ερώτημα:
