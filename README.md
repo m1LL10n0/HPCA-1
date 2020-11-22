@@ -30,3 +30,18 @@
 55-62 | `class L1I(L1_ICache):  tag_latency = 1 data_latency = 1    response_latency = 1    mshrs = 4    tgts_per_mshr = 8    size = '48kB'    assoc = 3` | L1 instruction cache
 65-73 | `class L1D(L1_DCache):    tag_latency = 2    data_latency = 2    response_latency = 1    mshrs = 16    tgts_per_mshr = 16    size = '32kB'    assoc = 2    write_buffers = 16` | L1 data cache
 87-96 | `class L2(L2Cache):    tag_latency = 12    data_latency = 12    response_latency = 5    mshrs = 32    tgts_per_mshr = 8    size = '1MB'    assoc = 16    write_buffers = 8    clusivity='mostly_excl'` | L2 cache
+
+---
+#### 2ο Ερώτημα:
+Τα στοιχεία αυτά μπορούν αν επαληθευτούν κοιτάζοντας στο αρχείο **config.ini**:
+Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
+--- | --- | ---
+15 | `cache_line_size=64` | cache line size
+21 | `mem_ranges=0:2147483648` | DRAM 2GB
+22 | `memories=system.mem_ctrls0.dram system.mem_ctrls1.dram` | 2 channels
+162-193 | `[system.cpu_cluster.cpus.dcache]` | όλα τα χαρακτηριστικά της L1 data cahce
+908-939 | `[system.cpu_cluster.cpus.icache]` | όλα τα χαρακτηριστικά της L1 instruction cahce
+1214-1245 | `[system.cpu_cluster.l2]` | όλα τα χαρακτηριστικά της L2 cahce
+
+Παρατήρησα ότι καθώς άλλαζα το clock απο command line, στην σειρά 44 μεσα στο `[system.clk_domain]` το clock παρέμενε 1000 ενώ το clock σειρά 58 στο `[system.cpu_cluster.clk_domain]` άλλαζε ώστε:  
+**`cpu-freq=(system.clk_domain.clock/system.cpu_cluster.clk_domain.clock)GHz`**  
