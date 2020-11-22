@@ -125,10 +125,11 @@ system.cpu.numCycles 2023333 | system.cpu.numCycles 4183397 | Νumber of cpu cyc
 
 ---
 #### Sources:
-- [SimpleCPU](https://www.gem5.org/documentation/general_docs/cpu_models/SimpleCPU)
-- [MinorCPU](https://www.gem5.org/documentation/general_docs/cpu_models/minor_cpu)
-- [Memory Access Types](https://www.gem5.org/documentation/general_docs/memory_system/index.html#access-types)
-- [Micro Ops](https://en.wikipedia.org/wiki/Micro-operation)
+- [SimpleCPU - gem5.org](https://www.gem5.org/documentation/general_docs/cpu_models/SimpleCPU)
+- [MinorCPU - gem5.org](https://www.gem5.org/documentation/general_docs/cpu_models/minor_cpu)
+- [gem5 CPU model differences - stackoverflow.com](https://stackoverflow.com/questions/58554232/what-is-the-difference-between-the-gem5-cpu-models-and-which-one-is-more-accurat)
+- [Memory Access Types - gem5.org](https://www.gem5.org/documentation/general_docs/memory_system/index.html#access-types)
+- [Micro Ops - wikipedia.com](https://en.wikipedia.org/wiki/Micro-operation)
 
 ---
 #### Σχόλια:  
