@@ -47,13 +47,13 @@
 **`cpu-freq=(system.clk_domain.clock/system.cpu_cluster.clk_domain.clock)GHz`** 
 
 **b) stats.txt**:
-Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
+Σειρά | Κώδικας | Περιγραφή
 --- | --- | ---
 14 | `system.cpu_cluster.cpus.committedInsts 5028` | Number of instructions committed
 15 | `system.cpu_cluster.cpus.committedOps 5834` | Number of ops (including micro ops) committed  
 
 **c) stats.txt**:
-Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
+Σειρά | Κώδικας | Περιγραφή
 --- | --- | ---
 143 | `system.cpu_cluster.cpus.dcache.overall_mshr_misses::total 147` | number of overall MSHR misses in L1 dcache
 344 | `system.cpu_cluster.cpus.icache.overall_mshr_misses::total 332` | number of overall MSHR misses in L1 icache
