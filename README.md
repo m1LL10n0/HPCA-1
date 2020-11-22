@@ -81,4 +81,10 @@
 - MinorCPU:  
 Δημιουργήθηκε για την μοντελοποίηση καθαρά in-order CPU, έχει σταθερό pipeline ενώ οι δομές δεδομένων και ο τρόπος εκτέλεσης εντολών μπορούν να τροποποιηθούν
 - Τέλος υπάρχουν και τα 03CPU και TraceCPU μοντέλα που βασίζονται σε out-of-order CPU
-  
+
+---
+#### Sources:
+- [SimpleCPU](https://www.gem5.org/documentation/general_docs/cpu_models/SimpleCPU)
+- [MinorCPU](https://www.gem5.org/documentation/general_docs/cpu_models/minor_cpu)
+- [Memory Access Types](https://www.gem5.org/documentation/general_docs/memory_system/index.html#access-types)
+- [Micro Ops](https://en.wikipedia.org/wiki/Micro-operation)
