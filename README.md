@@ -33,7 +33,7 @@
 
 ---
 ### 2ο Ερώτημα:
-**a)** Τα στοιχεία αυτά μπορούν αν επαληθευτούν κοιτάζοντας στο αρχείο **config.ini**:
+**a)** Τα στοιχεία αυτά μπορούν αν επαληθευτούν κοιτάζοντας στο αρχείο [config.ini](simple_se/config.ini)
 Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
 --- | --- | ---
 15 | `cache_line_size=64` | cache line size
@@ -46,13 +46,13 @@
 Παρατήρησα ότι καθώς άλλαζα το clock απο command line, στην σειρά 44 μεσα στο `[system.clk_domain]` το clock παρέμενε 1000 ενώ το clock σειρά 58 στο `[system.cpu_cluster.clk_domain]` άλλαζε ώστε:  
 **`cpu-freq=(system.clk_domain.clock/system.cpu_cluster.clk_domain.clock)GHz`** 
 
-**b) stats.txt**:
+**b)** [stats.txt](simple_se/stats.txt):
 Σειρά | Κώδικας | Περιγραφή
 --- | --- | ---
 14 | `system.cpu_cluster.cpus.committedInsts 5028` | Number of instructions committed
 15 | `system.cpu_cluster.cpus.committedOps 5834` | Number of ops (including micro ops) committed  
 
-**c) stats.txt**:
+**c)** [stats.txt](simple_se/stats.txt):
 Σειρά | Κώδικας | Περιγραφή
 --- | --- | ---
 143 | `system.cpu_cluster.cpus.dcache.overall_mshr_misses::total 147` | number of overall MSHR misses in L1 dcache
