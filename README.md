@@ -1,6 +1,6 @@
 # HPCA
 ## Aristotle University of Thessaloniki 
-- *Εργαστήριο Β Ομάδα 3*
+- *Εργαστήριο Β Ομάδα 3 - 1η Εργασία*
 
 [Link to the Repository containing this README](https://github.com/pavlidic/HPCA/)
 
