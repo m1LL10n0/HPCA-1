@@ -33,7 +33,7 @@
 
 ---
 #### 2ο Ερώτημα:
-Τα στοιχεία αυτά μπορούν αν επαληθευτούν κοιτάζοντας στο αρχείο **config.ini**:
+**a)** Τα στοιχεία αυτά μπορούν αν επαληθευτούν κοιτάζοντας στο αρχείο **config.ini**:
 Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
 --- | --- | ---
 15 | `cache_line_size=64` | cache line size
@@ -44,4 +44,23 @@
 1214-1245 | `[system.cpu_cluster.l2]` | όλα τα χαρακτηριστικά της L2 cahce
 
 Παρατήρησα ότι καθώς άλλαζα το clock απο command line, στην σειρά 44 μεσα στο `[system.clk_domain]` το clock παρέμενε 1000 ενώ το clock σειρά 58 στο `[system.cpu_cluster.clk_domain]` άλλαζε ώστε:  
-**`cpu-freq=(system.clk_domain.clock/system.cpu_cluster.clk_domain.clock)GHz`**  
+**`cpu-freq=(system.clk_domain.clock/system.cpu_cluster.clk_domain.clock)GHz`** 
+
+**b) stats.txt**:
+Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
+--- | --- | ---
+14 | `system.cpu_cluster.cpus.committedInsts 5028` | Number of instructions committed
+15 | `system.cpu_cluster.cpus.committedOps 5834` | Number of ops (including micro ops) committed  
+
+**c) stats.txt**:
+Σειρά | Κώδικας | Βασικό Χαρακτηριστικό
+--- | --- | ---
+143 | `system.cpu_cluster.cpus.dcache.overall_mshr_misses::total 147` | number of overall MSHR misses in L1 dcache
+344 | `system.cpu_cluster.cpus.icache.overall_mshr_misses::total 332` | number of overall MSHR misses in L1 icache
+493 |`system.cpu_cluster.l2.overall_accesses::total 479` | number of overall (read+write) accesses  
+
+Όπως μπορούμε να δούμε, ο αριθμός τον προσπελάσεων της μνήμης cache L2 είναι:   
+**`479=dcache_mshr_misses+icache_mshr_misses`**    
+
+---
+#### 3ο Ερώτημα:
