@@ -82,6 +82,27 @@
 Δημιουργήθηκε για την μοντελοποίηση καθαρά in-order CPU, έχει σταθερό pipeline ενώ οι δομές δεδομένων και ο τρόπος εκτέλεσης εντολών μπορούν να τροποποιηθούν
 - Τέλος υπάρχουν και τα 03CPU και TraceCPU μοντέλα που βασίζονται σε out-of-order CPU
 
+**a)** 
+[MinorCPU stats.txt]() | [TimingSimpleCPU stats.txt]()
+--- | ---
+host_inst_rate 283616 | host_inst_rate 611985
+host_mem_usage 658964 | host_mem_usage 656660
+host_op_rate 324662 | host_op_rate 695487
+host_seconds 4.18 | host_seconds 1.93
+host_tick_rate 173701768 | host_tick_rate 927086803
+sim_freq 1000000000000 | sim_freq 1000000000000
+sim_insts 1185066 | sim_insts 1179251
+sim_ops 1356598 | sim_ops 1340215
+sim_seconds 0.000726 | sim_seconds 0.001787
+sim_ticks 725814000 | sim_ticks 1786530000
+system.cpu.committedInsts 1185066 | system.cpu.committedInsts 1179251
+system.cpu.committedOps 1356598 | system.cpu.committedOps 1340215
+system.cpu.numCycles 1451628  | system.cpu.numCycles 3573060
+
+**b)**  
+Όπως μπορούμε να παρατηρήσουμε, ο αριθμός τον εντολών που προσομοιώθηκαν καθώς και το μέγεθος της μνήμης που χρησιμοποίησαν οι δύο αυτές διαφορετικές εκτελέσεις του προγράμματός μας είναι παρόμοιες καθώς εξαρτώνται σχεδόν αποκλειστικά από το ίδιο το πρόγραμμα το οποίο δεν αλλάζει. Από την άλλη όμως βλέπουμε ότι ο προσομοιωμένος χρόνος εκτέλεσης είναι σημαντικά μικρότερος στο μοντέλο MinorCPU καθώς χρησιμοποιεί pipeline ενώ επίσης το μοντέλο TimingSimpleCPU περιμένει και για την επιστροφή των memory requests από το memory system.
+
+
 ---
 #### Sources:
 - [SimpleCPU](https://www.gem5.org/documentation/general_docs/cpu_models/SimpleCPU)
