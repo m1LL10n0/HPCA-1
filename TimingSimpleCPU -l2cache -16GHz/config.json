@@ -40,7 +40,7 @@
                 "app_path": "/proc",
                 "eventq_index": 0,
                 "host_paths": [
-                    "m5out/fs/proc"
+                    "m5out/HPCA/TimingSimpleCPU -l2cache -16GHz//fs/proc"
                 ]
             },
             {
@@ -51,7 +51,7 @@
                 "app_path": "/sys",
                 "eventq_index": 0,
                 "host_paths": [
-                    "m5out/fs/sys"
+                    "m5out/HPCA/TimingSimpleCPU -l2cache -16GHz//fs/sys"
                 ]
             },
             {
@@ -62,7 +62,7 @@
                 "app_path": "/tmp",
                 "eventq_index": 0,
                 "host_paths": [
-                    "m5out/fs/tmp"
+                    "m5out/HPCA/TimingSimpleCPU -l2cache -16GHz//fs/tmp"
                 ]
             }
         ],

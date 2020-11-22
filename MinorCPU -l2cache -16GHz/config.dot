@@ -1689,7 +1689,7 @@ fontsize=14;
 label="redirect_paths0 \n: RedirectPath";
 shape=Mrecord;
 style="rounded, filled";
-tooltip="app_path&#61;/proc&#10;\eventq_index&#61;0&#10;\host_paths&#61;m5out/fs/proc";
+tooltip="app_path&#61;/proc&#10;\eventq_index&#61;0&#10;\host_paths&#61;m5out/HPCA/MinorCPU -l2cache -16GHz//fs/proc";
 }
 
 subgraph cluster_system_redirect_paths1 {
@@ -1701,7 +1701,7 @@ fontsize=14;
 label="redirect_paths1 \n: RedirectPath";
 shape=Mrecord;
 style="rounded, filled";
-tooltip="app_path&#61;/sys&#10;\eventq_index&#61;0&#10;\host_paths&#61;m5out/fs/sys";
+tooltip="app_path&#61;/sys&#10;\eventq_index&#61;0&#10;\host_paths&#61;m5out/HPCA/MinorCPU -l2cache -16GHz//fs/sys";
 }
 
 subgraph cluster_system_redirect_paths2 {
@@ -1713,7 +1713,7 @@ fontsize=14;
 label="redirect_paths2 \n: RedirectPath";
 shape=Mrecord;
 style="rounded, filled";
-tooltip="app_path&#61;/tmp&#10;\eventq_index&#61;0&#10;\host_paths&#61;m5out/fs/tmp";
+tooltip="app_path&#61;/tmp&#10;\eventq_index&#61;0&#10;\host_paths&#61;m5out/HPCA/MinorCPU -l2cache -16GHz//fs/tmp";
 }
 
 }
