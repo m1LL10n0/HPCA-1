@@ -43,8 +43,8 @@
 908-939 | `[system.cpu_cluster.cpus.icache]` | όλα τα χαρακτηριστικά της L1 instruction cahce
 1214-1245 | `[system.cpu_cluster.l2]` | όλα τα χαρακτηριστικά της L2 cahce
 
-Παρατήρησα ότι καθώς άλλαζα το clock απο command line, στην σειρά 44 μεσα στο `[system.clk_domain]` το clock παρέμενε 1000 ενώ το clock σειρά 58 στο `[system.cpu_cluster.clk_domain]` άλλαζε ώστε:  
-**`cpu-freq=(system.clk_domain.clock/system.cpu_cluster.clk_domain.clock)GHz`** 
+Παρατήρησαμε ότι καθώς άλλαζαμε το clock απο command line, στην σειρά 44 μεσα στο `[system.clk_domain]` το clock παρέμενε 1000 ενώ το clock σειρά 58 στο `[system.cpu_cluster.clk_domain]` άλλαζε ώστε:  
+**`cpu-freq = (system.clk_domain.clock / system.cpu_cluster.clk_domain.clock)GHz`** 
 
 **b)** [stats.txt](simple_se/stats.txt):
 Σειρά | Κώδικας | Περιγραφή
@@ -54,7 +54,7 @@
 14 | `system.cpu_cluster.cpus.committedInsts 5028` | Number of instructions committed
 15 | `system.cpu_cluster.cpus.committedOps 5834` | Number of ops (including micro ops) committed  
 
-Ο αριθμός των εντολών που προσομοιώθηκαν και έγιναν \<\<committed\>\> φαίνεται να είναι ίδιος όμως λόγω του γεγονότος ότι μερικές απο τις εντολές έσπασαν σε περισσότερα αλλά μικρότερα micro ops που γίνονται πιο γρήγορα, ο αριθμός των εντολών που ενωματώνει τα micro ops είναι μεγαλύτερος.
+Ο αριθμός των εντολών που προσομοιώθηκαν και έγιναν \<\<committed\>\> φαίνεται να είναι ίδιος όμως λόγω του γεγονότος ότι μερικές απο τις εντολές έσπασαν σε περισσότερα αλλά μικρότερα micro ops που γίνονται πιο γρήγορα, ο αριθμός των εντολών που ενσωματώνει τα micro ops είναι μεγαλύτερος.
 
 **c)** [stats.txt](simple_se/stats.txt):
 Σειρά | Κώδικας | Περιγραφή
@@ -63,8 +63,8 @@
 344 | `system.cpu_cluster.cpus.icache.overall_mshr_misses::total 332` | number of overall MSHR misses in L1 icache
 493 |`system.cpu_cluster.l2.overall_accesses::total 479` | number of overall (read+write) accesses  
 
-Όπως μπορούμε να δούμε, ο αριθμός τον προσπελάσεων της μνήμης cache L2 είναι:   
-**`479=dcache_mshr_misses+icache_mshr_misses`**    
+Όπως μπορούμε να δούμε, ο αριθμός των προσπελάσεων της μνήμης cache L2 είναι:   
+**`479 = dcache_mshr_misses + icache_mshr_misses`**    
 
 ---
 ### 3ο Ερώτημα:
