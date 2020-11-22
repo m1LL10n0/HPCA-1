@@ -82,7 +82,7 @@
 Δημιουργήθηκε για την μοντελοποίηση καθαρά in-order CPU, έχει σταθερό pipeline ενώ οι δομές δεδομένων και ο τρόπος εκτέλεσης εντολών μπορούν να τροποποιηθούν
 - Τέλος υπάρχουν και τα 03CPU και TraceCPU μοντέλα που βασίζονται σε out-of-order CPU
 
-**a)** Τρέχουμε το πρόγραμμά μας το οποίο είναι ένας πολλαπλασιασμός δύο 1000x1 πινάκων
+**a)** Τρέχουμε το πρόγραμμά μας, το οποίο είναι ένας πολλαπλασιασμός δύο 1000x1 πινάκων, με τις default ρυθμίσεις
 [MinorCPU stats.txt](MinorCPU/stats.txt) | [TimingSimpleCPU stats.txt](TimingSimpleCPU/stats.txt) | Περιγραφή
 --- | --- | ---
 host_inst_rate 283616 | host_inst_rate 611985 | Simulator instruction rate (inst/s)
